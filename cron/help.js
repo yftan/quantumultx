@@ -19,7 +19,6 @@ function help(path) {
     }
     $notify(`互助码`, `互助码`, '互助码运行完成，请查看日志')
   })
-  $done()
 }
 
 async function doGet(){
@@ -42,6 +41,7 @@ async function doGet(){
     for(let i=0; i< urlArr.length; i++){
         await help(urlArr[i]);
     }
+    $done()
 }
 
 
