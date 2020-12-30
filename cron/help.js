@@ -18,8 +18,8 @@ function help(path) {
         console.log(`${title}, ${subTitle}, ${detail}`)
     }
     $notify(`互助码`, `互助码`, '互助码运行完成，请查看日志')
-    $done()
   })
+  $done()
 }
 
 async function doGet(){
