@@ -11,14 +11,13 @@ function help(path) {
       let subTitle = `互助码注册成功`
       let detail = `${path}`
       console.log(`${title}, ${subTitle}, ${detail}`)
-      $notify(title, subTitle, detail)
     } else {
         let title = `互助码`
         let subTitle = `互助码注册失败`
         let detail = `${path}`
         console.log(`${title}, ${subTitle}, ${detail}`)
-        $notify(title, subTitle, detail)
     }
+    $notify(`互助码`, `互助码`, '互助码运行完成，请查看日志')
     $done()
   })
 }
